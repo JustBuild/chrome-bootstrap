@@ -118,6 +118,16 @@
 
   /* Header
   ============================================== */
+  .headerLine() {
+    border-bottom: 1px solid #EEE;
+    content: ' ';
+    display: block;
+    height: 1px;
+    margin: 0;
+    position: relative;
+    top: 13px;
+  }
+
   header {
     position: fixed;
     background-image: -webkit-linear-gradient(#FFF, #FFF 40%, rgba(255, 255, 255, 0.92));
@@ -127,7 +137,10 @@
     h1 {
       padding: 21px 0 13px;
       margin: 0;
-      border-bottom: 1px solid #EEE;
+      
+	  &::after {	
+		.headerLine();
+	  }
     }
 
     .corner {
@@ -147,6 +160,13 @@
       }
 
     }
+  }
+
+  .chrome-hr {
+    margin: 0;
+    &::after {	
+      .headerLine();
+	}
   }
 
 

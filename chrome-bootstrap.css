@@ -150,7 +150,15 @@
 .chrome-bootstrap header h1 {
   padding: 21px 0 13px;
   margin: 0;
+}
+.chrome-bootstrap header h1::after {
   border-bottom: 1px solid #EEE;
+  content: ' ';
+  display: block;
+  height: 1px;
+  margin: 0;
+  position: relative;
+  top: 13px;
 }
 .chrome-bootstrap header .corner {
   position: absolute;
@@ -164,6 +172,18 @@
   opacity: 1;
   top: 4px;
   right: 5px;
+}
+.chrome-bootstrap .chrome-hr {
+  margin: 0;
+}
+.chrome-bootstrap .chrome-hr::after {
+  border-bottom: 1px solid #EEE;
+  content: ' ';
+  display: block;
+  height: 1px;
+  margin: 0;
+  position: relative;
+  top: 13px;
 }
 .chrome-bootstrap section {
   -webkit-padding-start: 18px;
